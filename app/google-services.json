@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1003027699375",
+    "firebase_url": "https://tuitionmy-22afa.firebaseio.com",
+    "project_id": "tuitionmy-22afa",
+    "storage_bucket": "tuitionmy-22afa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003027699375:android:e2d702148dce560c",
+        "android_client_info": {
+          "package_name": "com.example.pandora.drawerlayout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003027699375-3g4h0fvpphcei6hkfis3vri07th6ffdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg_Jpd30f8dFFgAdPoqD2YdfCI-71yHdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

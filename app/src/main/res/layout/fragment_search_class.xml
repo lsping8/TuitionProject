@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/search_relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:columnCount="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

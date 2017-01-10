@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/registerBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ask_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:hint="Email"
+            android:textColorHint="#C0C0C0"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/ask_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:hint="Password"
+            android:textColorHint="#C0C0C0"
+            android:layout_below="@+id/ask_email"/>
+        <EditText
+            android:id="@+id/confirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:hint="Confirm Password"
+            android:textColorHint="#C0C0C0"
+            android:layout_below="@+id/ask_pass"/>
+    </RelativeLayout>
+
+</RelativeLayout>

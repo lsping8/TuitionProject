@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/round_edge_rectangle"
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp">
+
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/classTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/classStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/blueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/blueCircle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/blue_circle"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:text="L"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textCounter"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/counter_rectangle"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/redLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/blueLayout"
+            android:layout_toEndOf="@+id/blueLayout">
+
+            <TextView
+                android:id="@+id/redCircle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:text="A"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

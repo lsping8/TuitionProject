@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pandora.drawerlayout">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        //-------------------------------------Centre Manifest------------------------------------------------//
+
+        <activity
+            android:name=".TuitionCentre.MainActivity"
+            android:parentActivityName=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Login" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.ForumActivity"
+            android:parentActivityName=".TuitionCentre.ForumActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.CentreForum"
+            android:parentActivityName=".TuitionCentre.CentreForum"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.ForumActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.Attendance"
+            android:parentActivityName=".TuitionCentre.Attendance"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.AttendanceNotification"
+            android:parentActivityName=".TuitionCentre.AttendanceNotification"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.Attendance" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.TuitionFee"
+            android:parentActivityName=".TuitionCentre.TuitionFee"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.Promotion"
+            android:parentActivityName=".TuitionCentre.Promotion"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".TuitionCentre.SearchReportStudent"
+            android:parentActivityName=".TuitionCentre.SearchReportStudent"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.ReportStudent"
+            android:parentActivityName=".TuitionCentre.ReportStudent"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.SearchReportStudent" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.CreateReport"
+            android:parentActivityName=".TuitionCentre.CreateReport"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.ReportStudent" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.Management"
+            android:parentActivityName=".TuitionCentre.Management"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.TimeTableCategorize"
+            android:parentActivityName=".TuitionCentre.TimeTableCategorize"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TuitionCentre.CentreTimeTable"
+            android:parentActivityName=".TuitionCentre.CentreTimeTable"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.TuitionCentre.TimeTableCategorize" />
+        </activity>
+
+        //-------------------------------------Teacher Manifest------------------------------------------------//
+
+        <activity
+            android:name=".Teacher.TeacherMain"
+            android:parentActivityName=".Teacher.TeacherMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Login" />
+        </activity>
+
+        <activity
+            android:name=".Teacher.TeacherActivity"
+            android:parentActivityName=".Teacher.TeacherActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Teacher.TeacherMain" />
+        </activity>
+
+        <activity
+            android:name=".Teacher.TeacherForum"
+            android:parentActivityName=".Teacher.TeacherForum"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Teacher.TeacherActivity" />
+        </activity>
+
+        //-------------------------------------Student Manifest------------------------------------------------//
+
+        <activity
+            android:name=".Student.StudentMain"
+            android:parentActivityName=".Student.StudentMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Login" />
+        </activity>
+
+        <activity
+            android:name=".Student.StudentActivity"
+            android:parentActivityName=".Student.StudentActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Student.StudentMain" />
+        </activity>
+
+        <activity
+            android:name=".Student.StudentForum"
+            android:parentActivityName=".Student.StudentForum"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Student.StudentActivity" />
+        </activity>
+
+        //-------------------------------------Parent Manifest------------------------------------------------//
+
+        <activity
+            android:name=".Parent.ParentMain"
+            android:parentActivityName=".Parent.ParentMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Login" />
+        </activity>
+
+        <activity
+            android:name=".Parent.ParentActivity"
+            android:parentActivityName=".Parent.ParentActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pandora.drawerlayout.Parent.ParentMain" />
+        </activity>
+
+    </application>
+</manifest>

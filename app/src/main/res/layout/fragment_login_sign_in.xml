@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signInRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/loginBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/signInID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:hint="ID"
+            android:textColorHint="#C0C0C0"/>
+
+        <EditText
+            android:id="@+id/signInPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:hint="Password"
+            android:textColorHint="#C0C0C0"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/orPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/faceBookBtn"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/faceBookBtn"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+
+</RelativeLayout>
